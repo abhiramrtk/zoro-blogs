@@ -24,17 +24,30 @@ header {
   align-items: center;
   margin: 5px;
 }
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 70px; /* Adjust the size as needed */
+  height: auto;
+  background-color: #000000;
+  margin-right: 20px; /* Add space between logo and nav */
+}
 
 header .nav-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end; /* Align navigation items to the left */
+  justify-content: center; /* Align navigation items to the left */
   padding: 0;
   margin: 0;
   gap: 1.5rem;
@@ -239,9 +252,47 @@ button:hover {
     font-size: 14px;
   }
 
-  nav ul {
-    flex-direction: column;
-    justify-content: center;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between list items and theme switcher */
+    padding: 0.5rem 1rem;
+  }
+
+  header .logo-container {
+    display: none; /* Hide the logo in mobile view */
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row; /* Keep list items in a row */
+    justify-content: flex-start; /* Align list items to the left */
+    gap: 0.5rem; /* Add spacing between items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex: 1;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header .nav-container {
+    display: flex;
+    flex: 1; /* Allow nav-container to take available space */
+    justify-content: flex-start; /* Align nav items to the left */
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    text-align: left;
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  #theme-icon {
+    margin-left: auto;
+    font-size: 16px; /* Adjust size of theme switcher icon */
   }
 
   #create-blog-form {
@@ -256,11 +307,11 @@ button:hover {
 
   .card {
     width: 100%;
-    padding: 15px;
+    padding: 18px;
   }
 
   #prev-btn, #next-btn {
-    width: 100%;
+    width: 25%;
     margin: 10px 0;
   }
 }

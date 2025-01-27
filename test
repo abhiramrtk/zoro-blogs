@@ -1,0 +1,58 @@
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between list items and theme switcher */
+    padding: 0.5rem 1rem;
+  }
+
+  header .logo-container {
+    display: none; /* Hide the logo in mobile view */
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row; /* Keep list items in a row */
+    justify-content: flex-start; /* Align list items to the left */
+    gap: 0.5rem; /* Add spacing between items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  #theme-icon {
+    font-size: 16px; /* Adjust size of theme switcher icon */
+  }
+
+  #create-blog-form {
+    width: 90%;
+    padding: 10px;
+  }
+
+  #create-blog h2,
+  #blog-title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 18px;
+  }
+
+  #prev-btn, #next-btn {
+    width: 25%;
+    margin: 10px 0;
+  }
+}
