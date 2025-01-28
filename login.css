@@ -60,14 +60,23 @@ body{
     color:#fff;
 
 }
-.input-box i {
-    position: sticky;
-    right: 20px;
+.input-box .ii i {
+    position:absolute;
+    right: 50px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
 
 }
+.input-box .iii i {
+    position: absolute;
+    
+    right: 50px;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
 .wrapper .remember-forgot{
     display: flex;
     margin-top: 20px;
